@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.waylau.smm</groupId>
+	<artifactId>smm-mall</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>smm-mall</name>
+	<url>https://github.com/waylau/smm-mall</url>
+	<organization>
+		<name>waylau.com</name>
+		<url>https://waylau.com</url>
+	</organization>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.waylau.smm</groupId>
+			<artifactId>smm-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.waylau.smm</groupId>
+			<artifactId>smm-mvc</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.2.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- 设置编译插件 -->
+			<plugin>
+				<groupId>
+                        org.apache.maven.plugins
+                </groupId>
+				<artifactId>
+                    maven-compiler-plugin
+                </artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source> <!-- 源代码使用的开发版本 -->
+					<target>1.8</target>  <!-- 需要生成的目标class文件的编译版本 -->
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+</project>
